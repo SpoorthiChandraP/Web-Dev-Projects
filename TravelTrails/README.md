@@ -4,7 +4,8 @@ Developed user-friendly front-end for a travel website with HTML, CSS,
 and JavaScript, featuring inviting home and destination pages, and 
 optimized enquiry section for seamless user interaction.
 
-##OUTPUT
+## OUTPUT
+
 ![home](https://github.com/user-attachments/assets/3838e2a4-b289-4b98-8297-5cade2e891ae)
 
 ![destination1](https://github.com/user-attachments/assets/31ef4cad-0975-45f6-8865-07b6db1f4838)
