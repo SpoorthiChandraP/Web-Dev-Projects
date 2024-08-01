@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+</head>
+
+<style>
+    *{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100000;
+    background-color:rgb(127, 249, 255)89, 255;
+}
+.header #logo{
+    color: black;
+    font-size: 3rem;
+}
+.header #logo span{
+    color: var(--secondclr);
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--maincolor);
+}
+.navbar a:hover{
+    color: var(--secondclr);
+}
+.navbar.active{
+    left: 0;
+}
+p{
+    padding-top: 150px;
+    font-size: 40px;
+} 
+</style>
+
+<body style="background-image: url(images/en2); background-repeat: no-repeat; position: relative; background-size: cover;">
+    <header class="header">
+        <div class="navdiv"></div>
+            <a href="home.html" id="logo">TravelTrails</a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="dest.html">Destination</a>
+                <a href="enquire.html">Enquire</a>
+            </nav>
+        </div>
+    </header>
+    <p>Enter details</p>
+    <hr>
+    <form id="abc" style="font-size: 30px;" action="#">
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname"/><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname"/><br>
+
+        <label for="place">Destination:
+            <input type="checkbox" value="1" class="radio" name="p">Mumbai
+            <input type="checkbox" value="1" class="radio" name="p">Delhi
+            <input type="checkbox" value="1" class="radio" name="p">Hampi
+            <input type="checkbox" value="1" class="radio" name="p">Jaipur
+            <input type="checkbox" value="1" class="radio" name="p">Agra
+            <input type="checkbox" value="1" class="radio" name="p">Varanasi
+            <input type="checkbox" value="1" class="radio" name="p">Goa
+            <input type="checkbox" value="1" class="radio" name="p">Udaipur
+        </label><br>
+
+        <label for="dob">Start Date:</label>
+        <input type="date" id="dob" /><br />
+
+        <label for="dob">End Date:</label>
+        <input type="date" id="dob" /><br />
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile"/><br>
+
+        <label for="mail">Email ID:</label>
+        <input type="email" id="mail"/><br>
+    </form>
+
+    <button onclick="validate()" style="font-size: 25px; color: black; background-color:ghostwhite; margin: 20px 90px;"><b>Submit</b></button>
+    <p style="padding-top: 20px; font-size: 30px;">
+        <span id="result"></span>
+    </p>
+</body>
+
+<script>
+    function validate()
+    {
+        var res=document.getElementById("result");
+        var mobile_no=document.getElementById("mobile").value;
+        if(mobile_no.search(/^[0-9]+$/)==-1 || mobile_no.length!=10)
+        {
+            res.innerHTML="Invalid mobile number";     
+            return;  
+        }
+
+        var email=document.getElementById("mail").value;
+        if (email.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) == -1) 
+        {
+            res.innerHTML="Invalid Email ID";
+            return;
+        }
+        res.innerHTML="Pack your bags.<br>An iternary will be sent to your email id and mobile number."
+    }
+</script>
+</html>

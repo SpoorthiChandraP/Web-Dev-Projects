@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+</head>
+
+<style>
+    *{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100000;
+    background-color:rgb(127, 249, 255)89, 255;
+}
+.header #logo{
+    color: black;
+    font-size: 3rem;
+}
+.header #logo span{
+    color: var(--secondclr);
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--maincolor);
+}
+.navbar a:hover{
+    color: var(--secondclr);
+}
+.navbar.active{
+    left: 0;
+}
+.container{
+    width:85%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:25px;
+}
+.cards{
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.img{
+    height: 225px;
+    background-color:blanchedalmond;
+}
+.cards .i1{
+    background-image: url('images/del1.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards .i2{
+    background-image: url('images/mumbai.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards .i3{
+    background-image: url('images/hampi2.jpeg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards .i4{
+    background-image: url('images/jp3');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .i5{
+    background-image: url('images/agra');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .i6{
+    background-image: url('images/varanasi.jpeg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .i7{
+    background-image: url('images/goa.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .i8{
+    background-image: url('images/udaipur.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content{
+    padding:15px 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.content h2{
+    letter-spacing: 1.5px;
+}
+.content h3{
+    margin-top:5px;
+    font-family: sans-serif;
+}
+.content p{
+    margin:15px 0px;
+    font-size: 15px;
+}
+.content a{
+    text-decoration: none;
+    font-size: 17px;
+    color:#fff;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: black;
+    padding: 8px 15px;
+}
+.content a:hover{
+    background-color: #d4bb19;
+    color: #333;
+    transition: 1s ease;
+}
+</style>
+
+<body style="background-image: url(images/dest2);background-repeat: no-repeat; position: relative; background-size: cover;">
+    <header class="header">
+        <div class="navdiv"></div>
+            <a href="home.html" id="logo">TravelTrails</a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="dest.html">Destination</a>
+                <a href="enquire.html">Enquire</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 80px;">
+        <div class="cards">
+            <div class="img i1"></div> 
+            <div class="content">
+                <h2>DELHI</h2>
+                <p>
+                     <ul style="list-style-type: none;">
+                        <li>Akshardham</li>
+                        <li>Qutub Minar</li>
+                        <li>Lotus Temple</li>
+                        <li>India Gate</li>
+                        <li>Red Fort</li>
+                        <li>Rashtrapati Bhawan</li>
+                        <li>Gurudwara Sri Bangla Sahib</li>
+                        <li>Jantar Mantar</li>
+                        <li>Jama Masjid</li>
+                        <li>Humayun's Tomb</li>
+                        <li>National Rail Museum</li>
+                        <li>Lodhi Garden</li>
+                     </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+    
+        <div class="cards">
+            <div class="img i2"></div> 
+            <div class="content">
+                <h2>MUMBAI</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Gateway of India</li>
+                        <li>Marine Drive</li>
+                        <li>Siddhivinayak Temple</li>
+                        <li>Juhu Beach</li>
+                        <li>Bandra-Worli Sea Link</li>
+                        <li>Elephanta Caves</li>
+                        <li>Hanging Gardens</li>
+                        <li>Mumba Devi Temple</li>
+                        <li>Kanheri Caves</li>
+                        <li>Mahalakshmi Temple</li>
+                        <li>Haji Ali</li>
+                        <li>Chowpatty Beach</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="img i3"></div> 
+            <div class="content">
+                <h2>HAMPI</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Virupaksha Temple</li>
+                        <li>Vijaya Vittala Temple</li>
+                        <li>Lotus Mahal</li>
+                        <li>Hampi Bazaar</li>
+                        <li>Hippie Island</li>
+                        <li>Anjanadri Hill</li>
+                        <li>Matanga Hill</li>
+                        <li>Hemakunta Hill</li>
+                        <li>Monolithic Bull</li>
+                        <li>Elephant Stables</li>
+                        <li>Sri Lakshmi Narasimha Temple</li>
+                        <li>Daroji Sloth Bear Sanctuary</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="img i4"></div> 
+            <div class="content">
+                <h2>JAIPUR</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Amer Fort</li>
+                        <li>Hawa Mahal</li>
+                        <li>Nahagarh Fort</li>
+                        <li>Jal Mahal</li>
+                        <li>Jantar Mantar</li>
+                        <li>City Palace</li>
+                        <li>Birla Mandir</li>
+                        <li>Rambagh Palace</li>
+                        <li>Amar Jawan Jyoti</li>
+                        <li>Jawahar Kala Kendra</li>
+                        <li>Galtaji Temple</li>
+                        <li>Albert Hall Museum</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="img i5"></div> 
+            <div class="content">
+                <h2>AGRA</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Taj Mahal</li>
+                        <li>Agra Fort</li>
+                        <li>Fatehpur Sikri</li>
+                        <li>Itmad-ud-Daulah's Tomb</li>
+                        <li>Mehtab Bagh</li>
+                        <li>Gurudwara Guru Ka Taal</li>
+                        <li>Mankameshwar Mandir</li>
+                        <li>Ram Bagh</li>
+                        <li>Taj Museum</li>
+                        <li>Anguri Bagh</li>
+                        <li>Akbar's Tomb,Sikandra</li>
+                        <li>The Shish Mahal (The Glass Palace)</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="img i6"></div> 
+            <div class="content">
+                <h2>VARANASI</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Shri Kashi Vishwanath Temple</li>
+                        <li>Dashashwamedh Ghat</li>
+                        <li>Assi Ghat</li>
+                        <li>Manikarnika Ghat</li>
+                        <li>Sarnath</li>
+                        <li>Shri Satyanarayan Tulsi Manas Mandir</li>
+                        <li>Ramnagar Fort</li>
+                        <li>Sankat Mochan Hanuman Mandir</li>
+                        <li>Banaras Hindu University</li>
+                        <li>Sri Durga Temple</li>
+                        <li>Sarnath Archaeological Museum</li>
+                        <li>Tibetian Temple</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="img i7"></div> 
+            <div class="content">
+                <h2>GOA</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>Dudhsagar Falls</li>
+                        <li>Basilica of Bom Jesus</li>
+                        <li>Aguada Fort</li>
+                        <li>Immaculate Conception Church</li>
+                        <li>Palolem Beach</li>
+                        <li>Agonda Beach</li>
+                        <li>Baga Beach</li>
+                        <li>Calungute Beach</li>
+                        <li>Anjuna Beach</li>
+                        <li>Varca Beach</li>
+                        <li>Vagator Beach</li>
+                        <li>Bhagwan Mahavir Wildlife Sanctuary</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>        
+
+        <div class="cards">
+            <div class="img i8"></div> 
+            <div class="content">
+                <h2>UDAIPUR</h2>
+                <p>
+                    <ul style="list-style-type: none;">
+                        <li>City Palace</li>
+                        <li>Jagdish Temple</li>
+                        <li>Saheliyon ki bari</li>
+                        <li>Jagmandir</li>
+                        <li>Bagore Ki Haveli</li>
+                        <li>Shilpgram</li>
+                        <li>Lake Pichola</li>
+                        <li>Sajjangarh Monsoon Palace</li>
+                        <li>Bhartiya Lok Kala Mandir</li>
+                        <li>Sajjarharh Wildlife Sanctuary</li>
+                        <li>Ambari Ghat</li>
+                        <li>Fateh Sagar Lake</li>
+                    </ul>
+                </p>
+                <a href="enquire.html" class="btn">Enquire</a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
