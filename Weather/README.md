@@ -16,3 +16,8 @@ JavaScript for API integration and dynamic content.
 ## API:
 OpenWeatherMap API for retrieving weather data.
 
+## OUTPUT
+![1](https://github.com/user-attachments/assets/dedccb06-8052-4040-87c4-1eabc2824cf6)
+
+![2](https://github.com/user-attachments/assets/3cfa51f1-ec83-424b-9631-893d5e7fb600)
+
